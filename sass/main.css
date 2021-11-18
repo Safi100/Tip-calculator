@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f4fafa;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.logo {
+  margin-bottom: 65px;
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: 700px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  gap: 25px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.calculator-container .bill {
+  font-size: 14px;
+  font-weight: 700;
+  color: #7f9c9f;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: white;
+}
+
+.calculator-container .bill .people_input_error {
+  outline-color: #ff2c2c !important;
+  border-color: #ff2c2c !important;
+  color: #ff2c2c;
+}
+
+.calculator-container .bill input {
+  text-align: right;
+  background: transparent;
+  font-size: 24px;
+  border: none;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  outline-color: #26c0ab;
+  padding-right: 10px;
+}
+
+.calculator-container .bill input::-webkit-outer-spin-button, .calculator-container .bill input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.calculator-container .bill .input {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: #f4fafa;
+}
+
+.calculator-container .bill .input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.calculator-container .bill .input img {
+  margin: 0 15px;
+  position: absolute;
+}
+
+.calculator-container .bill .input input[type=text] {
+  width: 100%;
+}
+
+.calculator-container .bill .bill_people {
+  margin-bottom: 12px;
+}
+
+.calculator-container .bill .tip_amount {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.calculator-container .bill .tip_amount .child .selected {
+  background: #26c0ab;
+  color: #00494d;
+}
+
+.calculator-container .bill .tip_amount .child .unselected:hover {
+  background: #95eadf;
+  color: #00494d;
+}
+
+.calculator-container .bill .tip_amount .child button {
+  background: #00494d;
+  color: #fff;
+  font-size: 24px;
+  border-color: transparent;
+  outline: #00494d;
+  border-radius: 5px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.calculator-container .bill .tip_amount .child button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.calculator-container .bill .tip_amount .child #custom_tip {
+  background: #f4fafa;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.calculator-container .bill .tip_amount .child #custom_tip::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.calculator-container .bill .tip_amount .child #custom_tip:-ms-input-placeholder {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.calculator-container .bill .tip_amount .child #custom_tip::-ms-input-placeholder {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.calculator-container .bill .tip_amount .child #custom_tip::placeholder {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.calculator-container .bill .paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.calculator-container .bill .paragraph #people_error {
+  color: #ff2c2c;
+  visibility: hidden;
+}
+
+.calculator-container .display {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: #00494d;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
+}
+
+.calculator-container .display .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator-container .display .row:first-child {
+  margin-bottom: 30px;
+}
+
+.calculator-container .display .row .left p:first-child {
+  color: #fff;
+}
+
+.calculator-container .display .row .left p:last-child {
+  color: #7f9c9f;
+}
+
+.calculator-container .display .row .right h3 {
+  color: #26c0ab;
+  font-size: 35px;
+}
+
+.calculator-container .display #reset {
+  background: #0b686d;
+  color: #00494d;
+  border-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.calculator-container .display #reset:active {
+  background-color: #26c0ab;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 30px 0;
+  }
+  .calculator-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calculator-container .bill .tip_amount {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .calculator-container .display .top {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 699px) {
+  .calculator-container {
+    max-width: 400px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
