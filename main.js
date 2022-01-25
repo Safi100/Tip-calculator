@@ -6,7 +6,7 @@ var bill_amount_input = document.getElementById('amount'); // bill
 var people_number_input = document.getElementById('people_number'); // Number of people
 var custom_tip_input = document.getElementById('custom_tip'); // custom tip instead of [5,10,15,25,50]
 var people_error = document.getElementById("people_error"); // Error message if person <= 0 
-var people_number=1, bill=0, tip_amount=0,total=0,totalTip=0;
+var people_number=0, bill=0, tip_amount=0,total=0,totalTip=0;
 reset.addEventListener("click",()=>{
     bill_amount_input.value = "";
     people_number_input.value = "";
